@@ -1,5 +1,5 @@
 :root {
-    --rs-spacing: 5px; /* spacing between avatar and status */
+    --rs-spacing: 2px; /* spacing between avatar and status */
     --rs-width: 2px; /* width of the status */
     --rs-popout-spacing: 3px; /* spacing between avatar and status for user popouts */
     --rs-popout-width: 4px; /* width of the status for user popouts */
@@ -17,8 +17,15 @@
     --radial-status: 1;
 }
 
+.avatar-large {
+    position: relative;
+    top: 2px;
+}
+
+
 [class*="wrapper-"] [class*="status"],
 [class*="memberOffline-"] [class*="avatarOffline-"]::after {
+
     width:100%!important;
     background: transparent;
     border-radius: inherit !important;
@@ -33,6 +40,7 @@
 	border: var(--rs-width) solid #636b75 !important;
 	margin: 0 !important;
 	pointer-events: none;
+	
 }
 
 [class*="user-info"] [class*="status"] {
